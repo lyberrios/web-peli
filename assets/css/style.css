@@ -1,0 +1,196 @@
+/* Estilos generales*/
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.layout{
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "content content content lateral"
+    "footer footer footer footer";
+    grid-template-rows: 100px 70px auto 70px;
+}
+/* Estilos cabecera*/
+
+.header{
+    grid-area: header;
+    border: 1px solid rgb(1, 1, 1);
+    text-align: left;
+    font-style: italic;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    background: linear-gradient(90deg, #03228f,#0e73e4 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 300px;
+    margin-top: 30px;
+}
+
+.play{
+    width: 0;
+    height: 0;
+    margin-top: 15px;
+    margin-left: 16px;
+    border-left: 12px solid white;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+
+.header h1{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+/* Estilos barra de navegación*/
+
+.nav{
+    grid-area: nav;
+    background: linear-gradient(90deg, #03228f,#0e73e4 100%);
+
+}
+
+.nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav li{
+padding: 1rem;
+}
+.nav a{
+    display: block;
+    text-decoration: none ;
+    margin: 0 3 0 3;
+    color: rgb(250, 250, 250);
+    font-size: 1.3rem;
+    font-weight: lighter;
+    transition: all 300ms;
+}
+
+.nav a:hover{
+    transform: scale(0.8, 0.8);
+}
+
+/*Estilos para el contenido principal*/
+.content{
+    grid-area: content;
+    background: #f6f7f9;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.peli-item{
+    flex-grow: 1; /*mejora la adaptacion de las tarjetas*/
+    background: #fefeff;
+    margin: 15px;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px #ddd;
+    padding: 60px 25px;
+
+}
+
+button,
+input[type="submit"],
+input[type="button"]{
+    width: 100px;
+    background: #0e73e4;
+    color:#fefeff;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    border-radius: 1.2rem;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.peli-item .edit:hover{
+    background: #e77b00;
+}
+.peli-item .delete:hover{
+    background: #9b0202;
+
+}
+/*Estilo barra lateral*/
+
+.lateral{
+    grid-area: lateral;
+    background: #ddd;
+    border-left:1px solid #ddd;
+    padding: 20px;
+
+}
+
+.lateral > div{
+    box-sizing: border-box;
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    background: #fefeff;
+    box-shadow: 0px 0px 0px #ddd;
+}
+
+.lateral input[type="text"],
+.lateral textarea,
+.edit_form input[type="text"],
+.edit_form input[type="text"],
+.edit_form textarea{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 12px;
+    background: #ddd;
+    color: #454545;
+    width: 80%;
+    opacity: 4;
+    outline: 0;
+    border-color: transparent;
+}
+
+.edit_form{
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Estilos para el pie de página*/
+.footer{
+    grid-area: footer;
+    background: #d1defa;
+    color: #454545;
+    border-top: 1px solid #f6f7f9;
+    text-align: left;
+    line-height: 68px;
+    padding-left: 25px;
+}
+
+@media(max-width: 895px){
+    .content{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .peli-item{
+        width: 80%;
+    }
+}
