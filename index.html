@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <script type="module" src="assets/js/main.js" defer></script>
+    <title>Películas Favoritas</title>
+</head>
+
+<body>
+    <div class="layout">
+        <!--cabecera del sitio-->
+        <header class="header">
+            <div class="logo">
+                <div class="play"></div>
+            </div>
+            <h1>Películas</h1>
+        </header>
+
+        <!--barra de navegación-->
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+
+            </ul>
+        </nav>
+        <!--contenido principal-->
+        <section id="contenido" class="content">
+            <!--aquí van las películas-->
+            <article class="peli-item">
+                <h3 class="title">En busca de la felicidad</h3>
+                <p class="description">Se trata de una película sobre</p>
+            
+                <button class="edit">Editar</button>
+                <button class="delete">Borrar</button>
+
+            </article>
+        </section>
+
+        <aside class="lateral">
+            <div class="search">
+                <h3 class="title">Buscador</h3>
+                <form>
+                    <input type="text" id="search_field">
+                    <button id="search">Buscar</button>
+                </form>
+            </div>
+
+            <div class="add">
+                <h3 class="title">Añadir película</h3>
+                <form>
+                    <input type="text" id="title" placeholder="Titulo">
+                    <textarea id="description" placeholder="Descripción"></textarea>
+                    <input type="submit" id="save" value="Guardar" />
+                </form>
+            </div>
+        </aside>
+
+        <!--Pie de página-->
+        <footer class="footer">
+            &copy;2024 Ermarly B.Todos los derechos reservados - <a href="#">Sitio web oficial</a>
+        </footer>
+    </div>
+</body>
+
+</html>
