@@ -14,7 +14,7 @@ export default class List{
                 <p class="description">${peli.description}</p>
             
                 <button class="edit" data-id="${peli.id}">Editar</button>
-                <button class="delete" data-id="${peli.id}">"Borrar"</button>
+                <button class="delete" data-id="${peli.id}">Borrar</button>
 
             </article>
         `;

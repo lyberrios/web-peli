@@ -2,6 +2,8 @@ import Add from './modules/add.js';
 import List from './modules/list.js';
 import Storage from './modules/storage.js';
 import Search from './modules/search.js';
+import editMovies from './modules/edit.js';
+import deleteOfList from './modules/delete.js';
 
 export default class App{
 
@@ -11,6 +13,7 @@ export default class App{
         this.add = new Add();
         this.list = new List();
         this.storage = new Storage();
+        this.search = new Search();
     }
     load(){
         console.log("Cargando aplicación...");
@@ -24,7 +27,9 @@ export default class App{
         //Listar peliculas
         this.list.show(pelis)
         //Buscar peliculas
-        Search();
+        this.search;
         console.log("La aplicación de peliculas ha sido inicializada...")
+        deleteOfList();
+        editMovies();
     }
 }
