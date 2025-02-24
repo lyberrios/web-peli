@@ -15,7 +15,7 @@
 
 ## 🖼️ Vista previa del proyecto
 
-![Películas Favoritas](https://drive.google.com/file/d/1B27_ZgYq_hPcWz_1OLXxX5ERziSV5Pl3/view)
+![Películas Favoritas](https://imgur.com/a/bk8sC2d)
 
 🌍 **[Ver en vivo el proyecto](https://symphonious-medovik-e9acc8.netlify.app/)**
 
