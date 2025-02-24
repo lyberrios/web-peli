@@ -99,18 +99,19 @@ padding: 1rem;
 .peli-item{
     flex-grow: 1; /*mejora la adaptacion de las tarjetas*/
     background: #fefeff;
-    margin: 15px;
+    margin: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 6px #ddd;
     padding: 60px 25px;
-    transition: all .5s ease-in-out;
-    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -18px;box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -18px;
+    transition: all 0.5s ease-in-out;
 }
 
 .peli-item:hover{
-    background-position: 80% 20%;
-    transform: rotate3d(0.5, 1, 0, 30deg);
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -18px;
+        transform: translateY(-5px); /* Efecto de elevación */
+
 }
+
 button,
 input[type="submit"],
 input[type="button"]{

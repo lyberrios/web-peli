@@ -12,8 +12,8 @@ export default class Storage{
             pelis = [
                 {
                     id: 0,
-                    title: 'Desarrollo web',
-                    description: 'Google.com'
+                    title: 'En busca de la felicidad',
+                    description: 'Tras quedarse solo con su hijo, un padre decidido a salir de la pobreza se abre camino desde lo más bajo como corredor de bolsa.'
                 }
             ];
             localStorage.setItem("lastId", 1); // Guardar el último ID
